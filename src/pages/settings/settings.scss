@@ -1,0 +1,25 @@
+page-settings {
+  ion-list{
+    ion-item{
+      border-bottom: 1px solid map_get($colors, lightbg) !important;
+      font-weight: 400 !important;
+      color: #525252 !important;
+      .item-inner {
+        padding-right: 16px !important;
+        border-bottom: 0 !important;
+        .button {
+          margin-right: 0;
+        }
+        ion-toggle{
+          padding-right: 0 !important;
+        }
+        ion-select{
+          max-width: 100%;
+          width: 100%;
+          text-align: right;
+          padding: inherit 0;
+        }
+      }
+    }
+  }
+}

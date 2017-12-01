@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color=primary>
+    <ion-title>
+      Transaction Details
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="white" showWhen="ios">Cancel</span>
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/img/user1.jpg">
+      </ion-thumbnail>
+      <h2>Felix Nussbaum</h2>
+    </ion-item>
+  </ion-list>
+    <ion-list class="account_details">
+      <ion-item>
+        <p item-left>Account id</p>
+        <p>5516 4616 4421 6319</p>
+      </ion-item>
+      <ion-item>
+        <p item-left>Status</p>
+        <p>Success</p>
+      </ion-item>
+      <ion-item>
+        <p item-left>Date</p>
+        <p>18 May 2017</p>
+      </ion-item>
+      <ion-item>
+        <p item-left>Time</p>
+        <p>3:40p.m</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <p item-left>Ammount</p>
+        <p class="blance">$50</p>
+      </ion-item>
+    </ion-list>
+
+</ion-content>

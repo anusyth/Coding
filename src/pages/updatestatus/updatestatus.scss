@@ -1,0 +1,52 @@
+page-updatestatus {
+  .scroll-content {
+    ion-avatar {
+      margin: 0 8px 0 0 !important;
+      align-self: flex-start;
+    }
+    .item-inner {
+      border: 1px solid map_get($colors, lightdark) !important;
+      padding: map_get($padding, eighteen);
+      border-radius: map_get($radius, medium);
+      min-height: map_get($height, large);
+      .text-input-wp {
+        width: 100%;
+        border: 0;
+      }
+      ion-textarea {
+        transition: all 0.3s ease;
+        textarea {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+    .post_option_btn {
+      display: flex;
+      margin-top: map_get($margin, medium);
+      .button {
+        flex: 1;
+        border-radius: 0;
+        margin: 0;
+        border-right: 0;
+        padding: 0 0.9em;
+        height: map_get($height, smallbtn);
+        font-size: map_get($font, smallbtn);
+        &:first-child {
+          border-top-left-radius: map_get($radius, medium);
+          border-bottom-left-radius: map_get($radius, medium);
+        }
+        &:last-child {
+          border-right: 1px solid;
+          border-top-right-radius: map_get($radius, medium);
+          border-bottom-right-radius: map_get($radius, medium);
+        }
+      }
+    }
+    .post_btn {
+      width: 100%;
+      border-radius: map_get($radius, medium);
+      margin: map_get($margin, medium) 0 0 0;
+    }
+  }
+}

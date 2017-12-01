@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>OTP</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="forgotpassword">
+    <div class="image_section">
+      <img src="assets/img/forgotpassword.svg" alt="">
+    </div>
+    <div class="input_section">
+      <h3>Confirm your One Time Password</h3>
+      <p>We need your register mail address to send you password reset instruction.</p>
+      <div class="input_area">
+        <ion-icon name="md-mail"></ion-icon>
+        <input type="email" placeholder="Put the OTP">
+      </div>
+      <button ion-button full color=primary margin-top (tap)="gotopasswordchange()">
+        Confirm
+      </button>
+    </div>
+  </div>
+</ion-content>

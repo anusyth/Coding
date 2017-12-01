@@ -1,0 +1,76 @@
+page-serviceplan {
+  .scroll-content {
+    background-color: #f1f4f5;
+    .button {
+      box-shadow: none;
+    }
+    ul {
+      width: 100%;
+      margin: 0;
+      float: left;
+      padding: 0;
+    }
+    li {
+      background-color: map_get($colors, extralight);
+      list-style-type: none;
+      .pricing-header {
+        color: map_get($colors, dark);
+      }
+      .pricing-header.premium {
+        color: map_get($colors, primary);
+      }
+      .pricing-header {
+        height: auto;
+        padding: 1.9em 0.9em 1.6em;
+        pointer-events: auto;
+        text-align: center;
+        color: map_get($colors, dark);
+        background-color: transparent;
+        h2 {
+          font-size: 1.8rem;
+          letter-spacing: 2px;
+          margin-bottom: 3px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        .currency {
+          display: inline-block;
+          margin-top: 26px;
+          vertical-align: top;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .value {
+          font-size: 7rem;
+          font-weight: 300;
+        }
+        .duration {
+          font-size: 1.4rem;
+          &::before {
+            content: '/';
+            margin-right: 2px;
+          }
+        }
+      }
+      .pricing-features {
+        li {
+          width: 100%;
+          float: left;
+          padding: 1.6em 1em;
+          font-size: 1.4rem;
+          text-align: center;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-bottom: 1px dashed map_get($colors, lightdark);
+          &:last-child {
+            border-bottom: 0;
+          }
+          em {
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}

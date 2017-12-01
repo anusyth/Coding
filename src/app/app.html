@@ -1,0 +1,43 @@
+<ion-menu [content]="content" id="menu">
+  <ion-content>
+    <ion-list>
+      <button ion-item no-lines color=primary padding (tap)="gotoprofile()" menuClose>
+        <ion-thumbnail item-left class="wow fadeInDown animated">
+          <img src="assets/img/profile-img.jpg">
+        </ion-thumbnail>
+        <h2 color=white>Daniel Sthenon</h2>
+      </button>
+
+      <button ion-item no-lines (tap)="gotosettings()" menuClose>
+        Settings
+      </button>
+      <button ion-item no-lines (tap)="gotoplan()" menuClose>
+       Service plan
+      </button>
+      <button ion-item no-lines (click)="gotowallet()" menuClose>
+        Wallet
+      </button>
+      <button ion-item no-lines (click)="audiocall()" menuClose>
+        Audio Call
+      </button>
+      <button ion-item no-lines (click)="videocall()" menuClose>
+        VIdeo Call
+      </button>
+      <button ion-item no-lines (click)="nointernet()" menuClose>
+        No Internet
+      </button>
+      <button ion-item no-lines >
+        Sign out
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+
+
+
+
+
+

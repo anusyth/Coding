@@ -1,0 +1,37 @@
+page-audiocall {
+  ion-content {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+1,4a258e+100 */
+    background: #673ab7; /* Old browsers */
+    background: -moz-linear-gradient(top, #673ab7 1%, #4a258e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #673ab7 1%, #4a258e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #673ab7 1%, #4a258e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#673ab7', endColorstr='#4a258e', GradientType=0); /* IE6-9 */
+    .scroll-content {
+      overflow: hidden;
+      display: flex;
+      .call_time {
+        text-align: center;
+        margin: auto;
+        color: map_get($colors, extralight);
+      }
+    }
+    ion-footer{
+      ion-col {
+        display: flex;
+        .button {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          margin: auto;
+        }
+        .call_cut {
+          width: 60px;
+          height: 60px;
+          ion-icon {
+            transform: rotate(135deg);
+          }
+        }
+      }
+    }
+  }
+}

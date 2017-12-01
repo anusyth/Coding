@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>Verify</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="forgotpassword">
+    <div class="image_section">
+      <img src="assets/img/signupotp.svg" alt="">
+    </div>
+    <div class="input_section">
+      <h3>One time Password</h3>
+      <p>โปรดระบุรหัส OTP ที่ได้รับ</p>
+      <p>จากข้ออความทางเบอร์มือถือ</p>
+      <div class="input_area">
+        <ion-icon name="ios-key"></ion-icon>
+        <input type="number" placeholder="ใส่รหัส OTP">
+      </div>
+      <button ion-button full color=primary margin-top (tap)="gototab()">
+        ยืนยัน
+      </button>
+    </div>
+  </div>
+</ion-content>

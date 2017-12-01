@@ -1,0 +1,333 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-segment [(ngModel)]="friends" color="extralight">
+      <ion-segment-button value="add">
+        Add Friends
+      </ion-segment-button>
+      <ion-segment-button value="request">
+        Friend Request
+      </ion-segment-button>
+    </ion-segment>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding-horizontal>
+
+  <div [ngSwitch]="friends">
+    <ion-list no-margin *ngSwitchCase="'add'">
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user1.jpg">
+        </ion-avatar>
+        <h2 (tap)="gotouserprofile()">David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger" (tap)="deleterequest()">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user2.jpg">
+        </ion-avatar>
+        <h2>David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user3.jpg">
+        </ion-avatar>
+        <h2>DGary B. Sherrod</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Joshua W. Thomas</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Teresa F. Styles</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user1.jpg">
+        </ion-avatar>
+        <h2>David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user2.jpg">
+        </ion-avatar>
+        <h2>David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user3.jpg">
+        </ion-avatar>
+        <h2>DGary B. Sherrod</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Joshua W. Thomas</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Teresa F. Styles</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Add
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list no-margin *ngSwitchCase="'request'">
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user1.jpg">
+        </ion-avatar>
+        <h2>David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user2.jpg">
+        </ion-avatar>
+        <h2>David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user3.jpg">
+        </ion-avatar>
+        <h2>DGary B. Sherrod</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Joshua W. Thomas</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Teresa F. Styles</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user1.jpg">
+        </ion-avatar>
+        <h2>David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user2.jpg">
+        </ion-avatar>
+        <h2>David B. Foster</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user3.jpg">
+        </ion-avatar>
+        <h2>DGary B. Sherrod</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Joshua W. Thomas</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/img/user4.jpg">
+        </ion-avatar>
+        <h2>Teresa F. Styles</h2>
+        <button ion-button icon-left>
+          <ion-icon name="md-person-add"></ion-icon>
+          Confirm
+        </button>
+        <button ion-button icon-left color="danger">
+          <ion-icon name="md-close"></ion-icon>
+          Remove
+        </button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-fab bottom right (tap)="gotosearch()">
+    <button ion-fab mini>
+      <ion-icon name="ios-search"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

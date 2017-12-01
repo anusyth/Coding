@@ -1,0 +1,36 @@
+page-chatlist {
+  ion-list {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.31);
+    .item {
+      border: 0 !important;
+    }
+    ion-label.label {
+      display: flex;
+      .input-wrapper {
+        flex-direction: column;
+      }
+      ion-note {
+        font-size: 12px;
+      }
+    }
+    .active {
+      h2, p, ion-note {
+        font-weight: bold;
+        color: #696969;
+      }
+      ion-avatar{
+        position: relative;
+        &:after{
+          position: absolute;
+          content: '';
+          bottom: 0;
+          right: 0;
+          height: 12px;
+          width: 12px;
+          background-color: map_get($colors, secondary);
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}

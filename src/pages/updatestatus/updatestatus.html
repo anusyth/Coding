@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Update Status</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item no-padding>
+    <ion-avatar item-start>
+      <img src="assets/img/profile-img.jpg">
+    </ion-avatar>
+    <ion-textarea no-margin rows="1" id="statusInputBox" placeholder="Send message" (input)="change()"></ion-textarea>
+  </ion-item>
+  <div class="post_option_btn">
+    <button ion-button outline icon-left text-capitalize color="lightdark">
+      <ion-icon name="home"></ion-icon>
+      Image
+    </button>
+    <button ion-button outline icon-left text-capitalize color="lightdark">
+      <ion-icon name="home"></ion-icon>
+      Video
+    </button>
+    <button ion-button outline icon-left text-capitalize color="lightdark">
+      <ion-icon name="home"></ion-icon>
+      Location
+    </button>
+  </div>
+  <button ion-button outline class="post_btn">Post</button>
+
+</ion-content>

@@ -1,0 +1,17 @@
+page-userlist {
+  .active {
+    ion-avatar{
+      position: relative;
+      &:after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        height: 12px;
+        width: 12px;
+        background-color: map_get($colors, secondary);
+        border-radius: 100%;
+      }
+    }
+  }
+}

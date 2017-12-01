@@ -1,0 +1,32 @@
+page-walletdetails {
+  ion-item {
+    padding-left: 0 !important;
+    .item-inner {
+      padding-right: 0 !important;
+    }
+  }
+  .account_details {
+    ion-item{
+      border-bottom: 1px solid #dbdbdb;
+      &:last-child{
+        border-bottom: 0;
+      }
+      .item-inner {
+        text-align: right;
+        border-bottom: 0 !important;
+      }
+    }
+  }
+  .blance{
+    text-align: right;
+    font-size: 1.5em;
+    color: map_get($colors, primary);
+  }
+  ion-label{
+    margin-right: 0 !important;
+  }
+  ion-thumbnail{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}

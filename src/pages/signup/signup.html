@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>ลงทะเบียน</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="center_screen">
+
+    <div class="pro-pic-change">
+      <div class="image">
+        <img [src]="base64Image" *ngIf="base64Image"/>
+      </div>
+      <button ion-button round outline color=primary (tap)="changeprofilepic()">
+      <ion-icon name="md-camera"></ion-icon>
+      </button>
+    </div>
+
+    <div class="input_area">
+      <ion-icon name="md-person"></ion-icon>
+      <input type="text" placeholder="ชื่อเล่น">
+    </div>
+
+    <div class="input_area">
+      <ion-icon name="md-person"></ion-icon>
+      <input type="text" placeholder="ชื่อจริง">
+    </div>
+
+    <div class="input_area">
+      <ion-icon name="md-mail"></ion-icon>
+      <input type="text" placeholder="อีเมล">
+    </div>
+    <div class="input_area">
+      <ion-icon name="md-call"></ion-icon>
+      <input type="number" placeholder="เบอร์มือถือที่ใช้ติดต่อจริง">
+    </div>
+
+    <!-- <div class="input_area">
+      <ion-icon name="ios-man"></ion-icon>
+      <ion-datetime displayFormat="MM/DD/YYYY" placeholder="Date of Birth"></ion-datetime>
+    </div> -->
+
+    <!-- <div class="input_area">
+      <ion-icon name="md-male"></ion-icon>
+      <ion-select interface="action-sheet" placeholder="เพศ">
+        <ion-option>Male</ion-option>
+        <ion-option>Female</ion-option>
+      </ion-select>
+    </div> -->
+
+    <div class="input_area">
+      <ion-icon name="md-lock"></ion-icon>
+      <input type="password" placeholder="รหัสผ่าน">
+    </div>
+    <div class="input_area">
+      <ion-icon name="md-lock"></ion-icon>
+      <input type="password" placeholder="ยืนยันรหัสผ่านอีกครั้ง">
+    </div>
+    <button ion-button margin-top full color="primary" round (tap)="gotootp()">สมัครสมาชิก</button>
+  </div>
+
+</ion-content>

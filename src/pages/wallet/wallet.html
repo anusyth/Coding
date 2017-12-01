@@ -1,0 +1,111 @@
+<!--
+  Generated template for the Wallet page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>Wallet</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid no-padding class="available_blance">
+    <ion-row no-padding>
+      <ion-col>
+        <ion-card>
+          <ion-card-header color=primary>
+            $ 0.01
+          </ion-card-header>
+
+          <ion-card-content color=dark>
+            Available to spend
+          </ion-card-content>
+        </ion-card>
+        <ion-list>
+          <button ion-item>
+            <ion-icon color="primary" name="add" item-left></ion-icon>
+            Add Money
+          </button>
+        </ion-list>
+        <ion-list class="searchbar_area">
+          <ion-item>
+            <ion-searchbar></ion-searchbar>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-list>
+        <ion-list-header no-margin>
+          Recent Transaction
+        </ion-list-header>
+        <button ion-item (click)="gotowalletdetails()">
+          <ion-avatar item-left>
+            <img src="assets/img/user1.jpg">
+          </ion-avatar>
+          <div class="description">
+            <h2>Felix Nussbaum</h2>
+            <p>3:40p.m | 18.5.2017</p>
+          </div>
+          <ion-note class="deduction_balance" item-end>$ 50</ion-note>
+        </button>
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="assets/img/user2.jpg">
+          </ion-avatar>
+          <div class="description">
+            <h2>Dieter Strauss</h2>
+            <p>1:40p.m | 17.5.2017</p>
+          </div>
+          <ion-note class="deduction_balance" item-end>$ 42</ion-note>
+        </button>
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="assets/img/user3.jpg">
+          </ion-avatar>
+          <div class="description">
+            <h2>Mathias Bach</h2>
+            <p>3:40p.m | 18.5.2017</p>
+          </div>
+          <ion-note class="deduction_balance" item-end>$ 75</ion-note>
+        </button>
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="assets/img/user1.jpg">
+          </ion-avatar>
+          <div class="description">
+            <h2>Felix Nussbaum</h2>
+            <p>3:40p.m | 18.5.2017</p>
+          </div>
+          <ion-note class="deduction_balance" item-end>$ 50</ion-note>
+        </button>
+        <ion-list-header no-margin>
+          Two Days ago Transaction
+        </ion-list-header>
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="assets/img/user2.jpg">
+          </ion-avatar>
+          <div class="description">
+            <h2>Dieter Strauss</h2>
+            <p>1:40p.m | 17.5.2017</p>
+          </div>
+          <ion-note class="deduction_balance" item-end>$ 42</ion-note>
+        </button>
+        <button ion-item>
+          <ion-avatar item-left>
+            <img src="assets/img/user3.jpg">
+          </ion-avatar>
+          <div class="description">
+            <h2>Mathias Bach</h2>
+            <p>3:40p.m | 18.5.2017</p>
+          </div>
+          <ion-note class="deduction_balance" item-end>$ 75</ion-note>
+        </button>
+      </ion-list>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,136 @@
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>David B. Foster</ion-title>
+
+    <ion-buttons right (tap)="messageattach($event)" class="mrgn_right">
+      <button ion-button icon-only>
+        <ion-icon name="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="message">
+    <ol class="chat">
+      <li class="other">
+        <div class="avatar"><img src="assets/img/user1.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-left"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum deleniti
+            dolorum</p>
+          <div class="msg_details">
+            <time>6:25 A.M</time>
+          </div>
+        </div>
+      </li>
+      <li class="self">
+        <div class="avatar"><img src="assets/img/user3.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-right"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut dolores dolorum explicabo,
+            facere necessitatibus omnis provident recusandae similique! Ex.</p>
+          <div class="msg_details">
+            <time>6:27 A.M</time>
+            <ion-icon name="md-done-all"></ion-icon>
+          </div>
+        </div>
+      </li>
+      <li class="other">
+        <div class="avatar"><img src="assets/img/user1.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-left"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum deleniti dolorum
+            molestias perferendis voluptas. Mollitia.</p>
+          <div class="msg_details">
+            <time>6:28 A.M</time>
+          </div>
+        </div>
+      </li>
+      <li class="self">
+        <div class="avatar"><img src="assets/img/user3.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-right"></div>
+          <img src="assets/img/post1.png"/>
+          <div class="msg_details">
+            <time>6:29 A.M</time>
+            <ion-icon name="md-done-all"></ion-icon>
+          </div>
+        </div>
+      </li>
+      <li class="other">
+        <div class="avatar"><img src="assets/img/user1.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-left"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum deleniti dolorum
+            fugit minus, modi molestiae, molestias reiciendis sed tempore vel velit, veritatis. Commodi iure
+            molestias perferendis voluptas. Mollitia.</p>
+          <div class="msg_details">
+            <time>6:30 A.M</time>
+          </div>
+        </div>
+      </li>
+      <li class="self">
+        <div class="avatar"><img src="assets/img/user3.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-right"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="msg_details">
+            <time>6:32 A.M</time>
+            <ion-icon name="md-done-all"></ion-icon>
+          </div>
+        </div>
+      </li>
+      <li class="other">
+        <div class="avatar"><img src="assets/img/user1.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-left"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum deleniti dolorum
+            molestias perferendis voluptas. Mollitia.</p>
+          <div class="msg_details">
+            <time>6:33 A.M</time>
+          </div>
+        </div>
+      </li>
+      <li class="self">
+        <div class="avatar"><img src="assets/img/user3.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-right"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          <div class="msg_details">
+            <time>6:35 A.M</time>
+            <ion-icon name="md-checkmark"></ion-icon>
+          </div>
+        </div>
+      </li>
+      <li class="self">
+        <div class="avatar"><img src="assets/img/user3.jpg"/></div>
+        <div class="msg">
+          <div class="arrow-right"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi exercitationem, quisquam ratione
+            suscipit vel velit. </p>
+          <div class="msg_details">
+            <time>6:38 A.M</time>
+            <ion-icon name="md-time"></ion-icon>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="reply_input">
+    <div class="input_area">
+      <ion-textarea no-margin placeholder="Send message" (input)="changetextarea()" id="messageInputBox"></ion-textarea>
+
+      <div class="right_arrow"></div>
+    </div>
+    <button ion-button>
+      <ion-icon name="ios-send"></ion-icon>
+    </button>
+  </div>
+
+</ion-content>

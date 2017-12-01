@@ -1,0 +1,215 @@
+page-chat {
+  .mrgn_right {
+    margin-right: map_get($margin, bitsmall);
+  }
+  .scroll-content {
+    margin-bottom: 0 !important;
+    background-color: map_get($colors, bg);
+    display: flex;
+    flex-direction: column;
+    .message {
+      float: left;
+      flex: 1;
+      width: 100%;
+      overflow: auto;
+      .chat {
+        padding: 0;
+        margin: 0;
+        float: left;
+        width: 100%;
+        overflow: auto;
+        .other {
+          width: 100%;
+          padding: 8px;
+          float: left;
+          .avatar {
+            width: 50px;
+            float: left;
+            margin-right: 8px;
+            top: 8px;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 100%;
+              border: 1px solid map_get($colors, bordercolor);
+            }
+          }
+          .msg {
+            float: left;
+            max-width: calc(100% - 66px);
+            text-align: left;
+            background-color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            border-top-left-radius: 0;
+            position: relative;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+            min-width: 170px;
+            display: flex;
+            min-height: 58px;
+            flex-direction: column;
+            align-items: flex-end;
+            p {
+              line-height: 20px;
+              font-size: 14px;
+              font-family: inherit;
+              color: map_get($colors, dark);
+              flex: 1;
+              margin: auto 0;
+            }
+            img {
+              max-width: 100%;
+              width: 300px;
+              padding: 8px 0;
+            }
+          }
+          .arrow-left {
+            width: 0;
+            height: 0;
+            border-top: 0 solid transparent;
+            border-bottom: 9px solid transparent;
+            border-left: 11px solid map_get($colors, extralight);
+            position: absolute;
+            left: -11px;
+            top: 0;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+          }
+        }
+        .self {
+          width: 100%;
+          padding: 8px;
+          float: right;
+          .avatar {
+            width: 50px;
+            float: right;
+            margin-left: 8px;
+            top: 8px;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 100%;
+              border: 1px solid map_get($colors, bordercolor);
+            }
+          }
+          p {
+            line-height: 20px;
+            font-size: 14px;
+            font-family: inherit;
+            color: map_get($colors, dark);
+            flex: 1;
+            margin: auto 0;
+          }
+          .msg {
+            float: right;
+            max-width: calc(100% - 66px);
+            text-align: left;
+            background-color: map_get($colors, lightprimary);
+            padding: 8px 16px;
+            border-radius: 6px;
+            border-top-right-radius: 0;
+            position: relative;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+            min-width: 100px;
+            .arrow-right {
+              width: 0;
+              height: 0;
+              border-top: 0 solid transparent;
+              border-bottom: 9px solid transparent;
+              border-left: 11px solid map_get($colors, lightprimary);
+              position: absolute;
+              right: -11px;
+              top: 0;
+            }
+          }
+        }
+        .msg {
+          .msg_details {
+            float: right;
+            color: map_get($colors, dark);
+            font-size: 12px;
+            display: flex;
+            align-items: flex-end;
+            margin-top: 6px;
+            height: 12px;
+            time {
+              font-family: Roboto;
+              font-size: 10px;
+            }
+            ion-icon {
+              top: 2px;
+              margin-left: 8px;
+              font-size: 15px;
+              height: 18px;
+              position: relative;
+            }
+            .arrow-right {
+              width: 0;
+              height: 0;
+              border-top: 0 solid transparent;
+              border-bottom: 13px solid transparent;
+              border-left: 13px solid map_get($colors, extralight);
+              position: absolute;
+              right: -13px;
+              top: 0;
+              transform: scale(-1);
+            }
+          }
+          img {
+            border-radius: 4px;
+          }
+        }
+        video {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+    }
+    .reply_input {
+      bottom: 0;
+      width: 100%;
+      float: left;
+      display: flex;
+      .input_area {
+        position: relative;
+        flex: 1;
+        padding: 8px;
+        textarea {
+          flex: 1;
+          font-size: 15px;
+          float: left;
+          height: 50px;
+          border: 0;
+          border-radius: 4px;
+          border-top-right-radius: 0;
+          position: relative;
+          width: 100%;
+          padding: 4px;
+          background-color: map_get($colors, extralight);
+        }
+        .right_arrow {
+          width: 0;
+          height: 0;
+          border-top: 0 solid transparent;
+          border-bottom: 17px solid transparent;
+          border-left: 17px solid #fff;
+          position: absolute;
+          right: -8px;
+          top: 8px;
+        }
+      }
+      button.button {
+        font-size: 16px;
+        min-height: 0;
+        text-transform: capitalize;
+        font-weight: normal;
+        margin: 8px;
+        align-self: flex-end;
+        height: map_get($height, btnheight);
+        width: map_get($height, btnheight);
+        border-radius: 100%;
+      }
+    }
+  }
+}

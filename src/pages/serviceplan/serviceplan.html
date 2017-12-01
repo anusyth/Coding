@@ -1,0 +1,80 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Service Plan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ul class="pricing-list">
+
+    <li class="box_shadow" margin-bottom>
+      <header class="pricing-header premium">
+        <h2>Premium</h2>
+        <div class="price">
+          <span class="currency">$</span>
+          <span class="value">2%</span>
+          <span class="duration">Sale</span>
+        </div>
+      </header>
+      <div class="pricing-body">
+        <ul class="pricing-features">
+          <li><em>2%</em> Sale Price</li>
+          <li>Limited Representation</li>
+          <li>MLS Insertion</li>
+          <li><em>24/7</em> Support</li>
+        </ul>
+      </div>
+      <footer padding>
+        <button ion-button color="primary" full>Select</button>
+      </footer>
+    </li>
+
+    <li class="box_shadow" margin-bottom>
+      <header class="pricing-header">
+        <h2>Intermediate</h2>
+        <div class="price">
+          <span class="currency">$</span>
+          <span class="value">1.5%</span>
+          <span class="duration">Sale</span>
+        </div>
+      </header>
+      <div class="pricing-body">
+        <ul class="pricing-features">
+          <li><em>1.5%</em> Sale Price</li>
+          <li>Limited Representation</li>
+          <li>MLS Insertion</li>
+          <li><em>24/7</em> Support</li>
+        </ul>
+      </div>
+      <footer padding>
+        <button ion-button color="primary" full>Select</button>
+      </footer>
+    </li>
+
+    <li class="box_shadow" margin-bottom>
+      <header class="pricing-header">
+        <h2>Basic</h2>
+        <div class="price">
+          <span class="currency">$</span>
+          <span class="value">1%</span>
+          <span class="duration">Sale</span>
+        </div>
+      </header>
+      <div class="pricing-body">
+        <ul class="pricing-features">
+          <li><em>1%</em> Sale Price</li>
+          <li>Limited Representation</li>
+          <li>MLS Insertion</li>
+          <li><em>24/7</em> Support</li>
+        </ul>
+      </div>
+      <footer padding>
+        <button ion-button color="primary" full (tap)="gotoconfirmorder()">Select</button>
+      </footer>
+    </li>
+
+  </ul>
+</ion-content>
